@@ -10,6 +10,7 @@
 
   if( !window.console ) {
     // Well... nothing really... let it be!
+    return;
   }
 
   window.console.frog = function() {
@@ -41,7 +42,4 @@
       console.log(frog[i] + "\n");
     }
   }
-
-  console.frog("!");
-
 })();
