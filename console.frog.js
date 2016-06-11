@@ -18,6 +18,7 @@
     var i;
     
     // This looks like a frog, right?
+    // Taken from here - http://chris.com/ascii/index.php?art=animals/frogs
     var frog = [[""],
                 ["         _,-.  "],
                 [" ,-. ,--'  o ) "],
