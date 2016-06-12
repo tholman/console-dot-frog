@@ -39,7 +39,7 @@
     }
 
     // Log the frog!
-    for( var i = 0; i < frog.length; i++ ) {
+    for( i = 0; i < frog.length; i++ ) {
       console.log(frog[i] + "\n");
     }
   }
