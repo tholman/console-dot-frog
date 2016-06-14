@@ -43,4 +43,6 @@
       console.log(frog[i] + "\n");
     }
   }
+
+  // console.log(console.frog);
 })();

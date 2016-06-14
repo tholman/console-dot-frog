@@ -1,24 +1,195 @@
 <!doctype html>
 <html>
   <head>
-    <title> Console.Frog your way into the future! </title>
-    <meta name="description" content="">
+
+    <!-- META -->
+    <title>Console.Frog</title>
+    <meta name="description" content="An alternative to GitHub ribbons.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- JS -->
-    <script src='../console.frog.js'></script>
+    <!-- CSS -->
     <style>
-      
+      * {
+          box-sizing: border-box;
+      }
+
+      html, body {
+          font-family: Helvetica, Arial, sans-serif;
+          background: #fff;
+          margin: 0px;
+      }
+
+      h1 {
+          font-size: 30px;
+      }
+
+      p {
+          font-size: 16px;
+          font-weight: 100;
+          line-height: 24px;
+      }
+
+      .wrapper {
+          padding-right: 20px;
+          padding-left: 20px;
+          padding-top: 50px;
+          max-width: 580px;
+          margin: auto;
+      }
+
+      /**
+       * Footer
+       */
+
+      footer {
+          width: 100%;
+          margin-top: 25px;
+          margin-bottom: 100px;
+          background: #F3F3F3;
+          height: 50px;
+          padding: 15px;
+          padding-left: 25px;
+          padding-right: 25px;
+          color: #2D2D2D;
+          font-size: 13px;
+          letter-spacing: 1px;
+          font-family: monospace;
+      }
+
+      footer a {
+          color: #2d2d2d;
+      }
+
+      footer span {
+          margin-left: 10px;
+          margin-right: 10px;
+      }
+
+      .twitter-share-button {
+          margin-bottom: -4px;
+      }
+
+      code {
+        background: #eee;
+        padding: 2px 5px;
+      }
+
+      pre {
+        background: #eee;
+        padding: 10px;
+      }
+
+      .github-corner:hover .octo-arm {
+        animation: octocat-wave 560ms ease-in-out;
+      }
+
+      @keyframes octocat-wave {
+        0% {
+          transform: rotate(0deg);
+        }
+        
+        20% {
+          transform: rotate(-25deg);
+        }
+        
+        40% {
+          transform: rotate(10deg);
+        }
+        
+        60% {
+         transform: rotate(-25deg);
+        }
+        
+        80% {
+          transform: rotate(10deg);
+        }
+        
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+
+      /**
+       * Media
+       */
+
+      @media (max-width: 500px) {
+
+        footer {
+            text-align: center;
+            height: auto;
+            line-height: 30px;
+        }
+
+        footer span {
+            display: none;
+        }
+
+        footer a {
+            display: block;
+        }
+
+        .twitter-share-button {
+            margin-bottom: -8px;
+        }
+      }
     </style>
   </head>
   <body>
-    <h1>console.frog</h1>
-    <p> Have you ever lied in bed awake, wondering why console.log is so boring. Have you ever thought that console.frog should be a native browser api, but somehow isn't? Either way, this polyfil is for you!</p>
-    <h2>The old</h2>
-    <p>Here's a regular log. Omg boring</p>
-    <h2>The future</h2>
-    <p>And here is console.frog! Amazing</p>
+    <div class="wrapper">
+      <header>
+        <h1>console.frog</h1>
+        <p> Have you ever thought that console.frog should be a native browser api, but somehow isn't? Either way, this polyfil is for you!</p>
+        <p>Have you ever lied in bed awake, wondering why <code>console.log</code> is so boring? <a href="http://github.com/tholman/console-dot-frog"><code>console.frog</code></a> is an easy way to spice up your development life. Its really that simple! Runs on vanilla javascript, in most modern browsers (the kind that has developer tools!).
+        <p>So, here's what regular life looks like:</p>
 
-    <!-- Social stuff & Analytics -->
+        <div class="highlight highlight-source-js"><pre><span class="pl-c">// Here is you, logging some logs</span>
+<span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">"</span>Boring.<span class="pl-pds">"</span></span>);</pre></div>
+
+        <pre><code>// And here is your output.
+Boring.</code></pre>
+        <p>Wow, what a drag that was! No wonder you've become disenchanted with web development and hate every day life!</p>
+
+        <p><strong>NOW!</strong> Here's what your life could be after <code>console.frog</code></p>
+<div class="highlight highlight-source-js"><pre><span class="pl-c">// Here is happy you, logging some logs</span>
+<span class="pl-en">console</span>.<span class="pl-en">frog</span>(<span class="pl-s"><span class="pl-pds">"</span>Amazing!<span class="pl-pds">"</span></span>);</pre></div>
+
+<pre><code>// And here is your output.
+          _,-.     ------------
+  ,-. ,--'  o ) -(   Amazing!   )
+  \(,' '  ,,-'     ------------
+ ,-.\-.__,\\_
+ \(`--'    `\ 
+</code></pre>
+
+          <p>Wow. That feels good! You can see it in action if you look at the javascript console on this page!</p>
+
+          <h3>How do I use it!?</h3>
+          <p>Simply include the <code>console.frog.js</code> file into your app! You can also check the <a href="http://github.com/tholman/console-dot-frog">code out on github!</a></p>
+
+</article>
+      </header>
+      <footer>
+          <a href="http://tholman.com">By Tim Holman</a> <span>&bull;</span> <a href="http://twitter.com/twholman">@twholman</a> <span>&bull;</span> <a href="https://twitter.com/share" class="twitter-share-button" data-text="console.frog, the logging api of the future! -" data-via="twholman">Tweet</a>
+      </footer>
+      <a href="http://github.com/tholman/console-dot-frog" class="github-corner">
+        <svg width="80" height="80" viewBox="0 0 250 250" style="position: absolute; top: 0px; right: 0px; border: 0px;">
+          <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z" fill="#151513"></path>
+          <path class="octo-arm" d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="#ffffff" style="transform-origin: 130px 106px;"></path>
+          <path class="octo-body" d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="#ffffff"></path>
+        </svg>
+      </a>
+      <script src='../console.frog.js'></script>
+      <script>
+        console.frog("Thanks for looking!");
+      </script>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      <script>
+        var textarea = document.getElementsByTagName('textarea');
+        for(var i = 0, l = textarea.length; i < l; i++){
+          textarea[i].addEventListener("focus", function(){this.select()});
+        }
+      </script>
+    </div>
   </body>
 </html>
