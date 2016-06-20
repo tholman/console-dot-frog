@@ -29,7 +29,7 @@
 
     // Gets args as a string
     var args = Array.prototype.slice.call(arguments);
-    var stringOfArgs = args.toString().split(',').join(', ');
+    var stringOfArgs = args.join(' ');
 
     // Add the bubble if there is something to log!
     if( stringOfArgs.length > 0 ) {  
