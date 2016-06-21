@@ -15,17 +15,18 @@
 
   window.console.frog = function() {
 
-    var i;
+    var i,
+        css = "color: green";
     
     // This looks like a frog, right?
     // Taken from here - http://chris.com/ascii/index.php?art=animals/frogs
-    var frog = [[""],
-                ["         _,-.  "],
-                [" ,-. ,--'  o ) "],
-                [" \\(,' '  ,,-' "],
-                [",-.\\-.__,\\\\_"],
-                ["\\(`--'    `\\ "],
-                [""]];
+    var frog = [
+                "%c         _,-.  %c",
+                "%c ,-. ,--'  o ) %c",
+                "%c \\(,' '  ,,-' %c",
+                "%c,-.\\-.__,\\\\_%c",
+                "%c\\(`--'    `\\ %c",
+                ];
 
     // Gets args as a string
     var args = Array.prototype.slice.call(arguments);
@@ -33,16 +34,14 @@
 
     // Add the bubble if there is something to log!
     if( stringOfArgs.length > 0 ) {  
-      frog[1] = frog[1] + "   ---" + ("-".repeat(stringOfArgs.length)) + "-";
-      frog[2] = frog[2] + "-(   " + stringOfArgs + "   )";
-      frog[3] = frog[3] + "    ---" + ("-".repeat(stringOfArgs.length)) + "-";
+      frog[0] = frog[0] + "   ---" + ("-".repeat(stringOfArgs.length)) + "-";
+      frog[1] = frog[1] + "-(   " + stringOfArgs + "   )";
+      frog[2] = frog[2] + "    ---" + ("-".repeat(stringOfArgs.length)) + "-";
     }
 
     // Log the frog!
     for( i = 0; i < frog.length; i++ ) {
-      console.log(frog[i] + "\n");
+      console.log(frog[i], css, "");
     }
   }
-
-  // console.log(console.frog);
 })();
