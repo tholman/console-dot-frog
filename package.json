@@ -1,0 +1,22 @@
+{
+"name": "console-dot-frog",
+"version": "1.0.0",
+"description": "Log with a frog, its as simple as that!",
+"main": "console.frog.js",
+"repository": {
+"type": "git",
+"url": "git+https://github.com/tholman/console-dot-frog.git"
+},
+"keywords": [
+"web",
+"frogging",
+"logging",
+"console"
+],
+"author": "Tim Holman <timothy.w.holman@gmail.com>",
+"license": "MIT",
+"bugs": {
+"url": "https://github.com/tholman/console-dot-frog/issues"
+},
+"homepage": "https://github.com/tholman/console-dot-frog#readme"
+}
