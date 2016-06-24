@@ -1,6 +1,6 @@
 {
 "name": "console-dot-frog",
-"version": "1.0.0",
+"version": "1.0.1",
 "description": "Log with a frog, its as simple as that!",
 "main": "console.frog.js",
 "repository": {
