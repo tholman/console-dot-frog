@@ -7,13 +7,13 @@
  */
 
 (function dothething() {
-
-  if( !window.console ) {
-    // Well... nothing really... let it be!
-    return;
+  // Act on either the window.console, or the normal console.
+  var con = console;
+  if (typeof(window) !== 'undefined') {
+    con = window.console;
   }
 
-  window.console.frog = function() {
+  con.frog = function() {
 
     var i,
       css = "color: green";
