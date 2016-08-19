@@ -3,6 +3,9 @@
 "version": "1.0.1",
 "description": "Log with a frog, its as simple as that!",
 "main": "console.frog.js",
+"scripts": {
+  "test": "node test"
+},
 "repository": {
 "type": "git",
 "url": "git+https://github.com/tholman/console-dot-frog.git"
