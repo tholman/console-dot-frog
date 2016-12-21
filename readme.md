@@ -30,15 +30,25 @@ console.frog("Amazing!");
   ,-. ,--'  o ) -(   Amazing!   )
   \(,' '  ,,-'     ------------
  ,-.\-.__,\\_
- \(`--'    `\ 
+ \(`--'    `\
 ```
 
 Wow. That feels good!
 
-###Usage
+### Usage
 Simply include the `console.frog.js` file into your app!
 
-###License
+or using npm and Node.js, just run...
+ ```
+npm install console-dot-frog
+ ```
+...in your terminal, then include...
+ ```
+ import 'console-dot-frog';
+ ```
+ ...at the top of the file you want to use it in.
+
+### License
 Copyright (c) 2016 Tim Holman - http://tholman.com
 
 The MIT License
